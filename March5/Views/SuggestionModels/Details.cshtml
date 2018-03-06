@@ -1,0 +1,42 @@
+﻿@model March5.Models.SuggestionModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SuggestionModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Movie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieStar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieStar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewStars)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewStars)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RecordNum }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
